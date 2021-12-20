@@ -27,19 +27,19 @@ public class Categoria5 {
     public String getPregunta(){
         switch(numeroPregunta){
             case 1:
-                pregunta = "¿Pregunta 1?";
+                pregunta = "In which of these places is there no friction?";
                 break;    
             case 2:
-                pregunta = "¿Pregunta 2?";
+                pregunta = "Which of these phrases corresponds to the fundamental principle of energy?";
                 break;
             case 3:
-                pregunta ="¿Pregunta 3?";                
+                pregunta ="What type of friction force exists when one body rolls over another?";                
                 break;        
             case 4:
-                pregunta ="¿Pregunta 4?";                
+                pregunta ="Mechanical energy is the sum of two energies, what are they?";                
                 break;        
             default:
-                pregunta ="¿Pregunta 5?";                
+                pregunta ="A speaker emits at a given fixed frequency.It is correct to state that an observer will hear a sound:";                
                 break;
         }
         return pregunta;
@@ -48,120 +48,116 @@ public class Categoria5 {
     public  String[] getOpciones(){
         switch(numeroPregunta){
             case 1:
-                a = "a.Respuesta 1";
-                b = "b.Respuesta 2";
-                c = "c.Respuesta 3";
-                d = "d.Respuesta 4";
+                a = "a.heaven";
+                b = "b.An ice rink";
+                c = "c.space";
+                d = "None of the above";//respuesta correcta
                 opciones = new String[]{a,b,c,d};
                 break;    
             case 2:
-                a = "a.Respuesta 1";
-                b = "b.Respuesta 2";
-                c = "c.Respuesta 3";
-                d = "d.Respuesta 4";
+                a = "a.Energy is not created but it is destroyed through friction.";
+                b = "b.Energy is neither created nor destroyed, it only transforms.";//respuesta correcta
+                c = "c. Energy is created by machine systems that transform it.";
+                d = "d. Energy is neither created nor destroyed, it is only conserved.";
                 opciones = new String[]{a,b,c,d};
                 break;
             case 3:
-                a = "a.Respuesta 1";
-                b = "b.Respuesta 2";
-                c = "c.Respuesta 3";
-                d = "d.Respuesta 4";
+                a = "a.Rolling";//respuesta correcta
+                b = "b.Glide";
+                c = "c.Attraction";
+                d = "d.Viscous";
                 opciones = new String[]{a,b,c,d};           
                 break;        
             case 4:
-                a = "a.Respuesta 1";
-                b = "b.Respuesta 2";
-                c = "c.Respuesta 3";
-                d = "d.Respuesta 4";
+                a = "a.Kinetic energy and energy of friction.";
+                b = "b.Kinetic energy and hydraulic energy.";
+                c = "c.Kinetic energy and gravitational potential energy.";//respuesta correcta
+                d = "d.Kinetic energy and electrical energy.";
                 opciones = new String[]{a,b,c,d};
                 break;        
             default:
-                a = "a.Respuesta 1";
-                b = "b.Respuesta 2";
-                c = "c.Respuesta 3";
-                d = "d.Respuesta 4";
+                a = "a.More frequently if the observer or speaker moves closer to each other";//respuesta correcta
+                b = "b.More frequently if the observer or speaker moves away from each other";
+                c = "c.Less frequently if the observer moves away or if the speaker approaches";
+                d = "d.Less frequently if the observer moves away or if the speaker approaches";
                 opciones = new String[]{a,b,c,d};
                 break;
         }
         return opciones;
     }
-    // respuesta a la pregunta 1
-    public String question1 ( ){
-        if (respuesta.equalsIgnoreCase("a")){
-            puntaje = puntaje + puntos;
-            resultado = "Respuesta Correcta su puntaje es = " + puntaje;
-            r = "correcto";
-        }else if(respuesta.equalsIgnoreCase("salir")){
-            resultado = "Usted salio del juego con un puntaje =  " + puntaje;
-            r = "salio";
-        }else{
-            puntaje = 0;
-            resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
-            r = "malo";
-        }
-        return resultado;
-    }
-    // respuesta a la pregunta 2
-    public String question2 ( ){
-        if (respuesta.equalsIgnoreCase("a")){
-            puntaje = puntaje + puntos;
-            resultado = "Respuesta Correcta su puntaje es = " + puntaje;
-            r = "correcto";
-        }else if(respuesta.equalsIgnoreCase("salir")){
-            resultado = "Usted salio del juego con un puntaje =  " + puntaje;
-            r = "salio";
-        }else{
-            puntaje = 0;
-            resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
-            r = "malo";
-        }
-        return resultado;
-    }
-    // respuesta a la pregunta 3
-    public String question3 ( ){
-        if (respuesta.equalsIgnoreCase("a")){
-            puntaje = puntaje + puntos;
-            resultado = "Respuesta Correcta su puntaje es = " + puntaje;
-            r = "correcto";
-        }else if(respuesta.equalsIgnoreCase("salir")){
-            resultado = "Usted salio del juego con un puntaje =  " + puntaje;
-            r = "salio";
-        }else{
-            puntaje = 0;
-            resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
-            r = "malo";
-        }
-        return resultado;
-    }
-    // respuesta a la pregunta 4
-    public String question4 ( ){
-        if (respuesta.equalsIgnoreCase("a")){
-            puntaje = puntaje + puntos;
-            resultado = "Respuesta Correcta su puntaje es = " + puntaje;
-            r = "correcto";
-        }else if(respuesta.equalsIgnoreCase("salir")){
-            resultado = "Usted salio del juego con un puntaje =  " + puntaje;
-            r = "salio";
-        }else{
-            puntaje = 0;
-            resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
-            r = "malo";
-        }
-        return resultado;
-    }
-    // respuesta a la pregunta 5
-    public String question5 ( ){
-        if (respuesta.equalsIgnoreCase("a")){
-            puntaje = puntaje + puntos;
-            resultado = "Respuesta Correcta su puntaje es = " + puntaje;
-            r = "correcto";
-        }else if(respuesta.equalsIgnoreCase("salir")){
-            resultado = "Usted salio del juego con un puntaje =  " + puntaje;
-            r = "salio";
-        }else{
-            puntaje = 0;
-            resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
-            r = "malo";
+    // Respuesta
+    public String getRespuesta(){
+        switch (numeroPregunta) {
+            case 1:
+                if (respuesta.equalsIgnoreCase("d")){
+                    puntaje = puntaje + puntos;
+                    resultado = "Respuesta Correcta su puntaje es = " + puntaje;
+                    r = "correcto";
+                }else if(respuesta.equalsIgnoreCase("salir")){
+                    resultado = "Usted salio del juego con un puntaje =  " + puntaje;
+                    r = "salio";
+                }else{
+                    puntaje = 0;
+                    resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
+                    r = "malo";
+                }
+                break;
+            case 2:
+                if (respuesta.equalsIgnoreCase("b")){
+                    puntaje = puntaje + puntos;
+                    resultado = "Respuesta Correcta su puntaje es = " + puntaje;
+                    r = "correcto";
+                }else if(respuesta.equalsIgnoreCase("salir")){
+                    resultado = "Usted salio del juego con un puntaje =  " + puntaje;
+                    r = "salio";
+                }else{
+                    puntaje = 0;
+                    resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
+                    r = "malo";
+                }
+                break;
+            case 3:
+                if (respuesta.equalsIgnoreCase("a")){
+                    puntaje = puntaje + puntos;
+                    resultado = "Respuesta Correcta su puntaje es = " + puntaje;
+                    r = "correcto";
+                }else if(respuesta.equalsIgnoreCase("salir")){
+                    resultado = "Usted salio del juego con un puntaje =  " + puntaje;
+                    r = "salio";
+                }else{
+                    puntaje = 0;
+                    resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
+                    r = "malo";
+                }
+                break;
+            case 4:
+                if (respuesta.equalsIgnoreCase("c")){
+                    puntaje = puntaje + puntos;
+                    resultado = "Respuesta Correcta su puntaje es = " + puntaje;
+                    r = "correcto";
+                }else if(respuesta.equalsIgnoreCase("salir")){
+                    resultado = "Usted salio del juego con un puntaje =  " + puntaje;
+                    r = "salio";
+                }else{
+                    puntaje = 0;
+                    resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
+                    r = "malo";
+                }
+                break;
+            default:
+                if (respuesta.equalsIgnoreCase("a")){
+                    puntaje = puntaje + puntos;
+                    resultado = "Respuesta Correcta su puntaje es = " + puntaje;
+                    r = "correcto";
+                }else if(respuesta.equalsIgnoreCase("salir")){
+                    resultado = "Usted salio del juego con un puntaje =  " + puntaje;
+                    r = "salio";
+                }else{
+                    puntaje = 0;
+                    resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
+                    r = "malo";
+                }
+                break;
         }
         return resultado;
     }

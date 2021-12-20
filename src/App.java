@@ -22,6 +22,7 @@ public class App{
 
             //Ronda 1 - Categoria baja
             if (rondas[i]==1 && respuesta.equalsIgnoreCase("si")){
+                System.out.println("////////////////////////////////////"); 
                 System.out.println("Ronda "+(i+1));
                 System.out.println("Su Puntaje actual es = " + puntaje);      
                 // instancia de la primera categoria y obtencion de la pregunta y opciones
@@ -39,10 +40,11 @@ public class App{
                 primeraRonda.setRespuesta(ans);
                 resultado = primeraRonda.getRespuesta();
                 puntaje = primeraRonda.getPuntaje();
-                System.out.println(resultado); 
+                System.out.println(resultado);
+                System.out.println("////////////////////////////////////////"); 
                 // Continuación con el juego o salir
                 if (primeraRonda.getResultado().equalsIgnoreCase("correcto")){
-                    System.out.println("¿Desea continuar?(si/no):");
+                    System.out.println("¿Desea continuar?, categoria mas alta proxima ronda(si/no):");
                     respuesta = leer.nextLine();
                 }else{
                     respuesta = "no";
@@ -68,9 +70,10 @@ public class App{
                 resultado = segundaRonda.getRespuesta();
                 puntaje = segundaRonda.getPuntaje();
                 System.out.println(resultado);     
-                // Continuaón cone el juego
+                System.out.println("////////////////////////////////////////"); 
+                // Continuación con el juego o salir
                 if (segundaRonda.getResultado().equalsIgnoreCase("correcto")){
-                    System.out.println("¿Desea continuar?(si/no):");
+                    System.out.println("¿Desea continuar?, categoria mas alta proxima ronda(si/no):");
                     respuesta = leer.nextLine();
                 }else{
                     respuesta = "no";
@@ -96,9 +99,10 @@ public class App{
                 resultado = terceraRonda.getRespuesta();
                 puntaje = terceraRonda.getPuntaje();
                 System.out.println(resultado);     
-                // Continuaón del juego
+                System.out.println("////////////////////////////////////////"); 
+                // Continuación con el juego o salir
                 if (terceraRonda.getResultado().equalsIgnoreCase("correcto")){
-                    System.out.println("¿Desea continuar?(si/no):");
+                    System.out.println("¿Desea continuar?, categoria mas alta proxima ronda(si/no):");
                     respuesta = leer.nextLine();
                 }else{
                     respuesta = "no";
@@ -124,9 +128,10 @@ public class App{
                 resultado = cuartaRonda.getRespuesta();
                 puntaje = cuartaRonda.getPuntaje();
                 System.out.println(resultado);     
-                //Continuacion del juego
+                System.out.println("////////////////////////////////////////"); 
+                // Continuación con el juego o salir
                 if (cuartaRonda.getResultado().equalsIgnoreCase("correcto")){
-                    System.out.println("¿Desea continuar?(si/no):");
+                    System.out.println("¿Desea continuar?, proxima ronda la categoria es inglés(si/no):");
                     respuesta = leer.nextLine();
                 }else{
                     respuesta = "no";
@@ -152,6 +157,7 @@ public class App{
                 resultado = quintaRonda.getRespuesta();
                 puntaje = quintaRonda.getPuntaje();
                 System.out.println(resultado);     
+                System.out.println("////////////////////////////////////");     
                 // Finalización del juego
                 if (quintaRonda.getResultado().equalsIgnoreCase("correcto")){
                     System.out.println("Fue la ultima ronda");
