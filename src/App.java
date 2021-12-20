@@ -37,7 +37,7 @@ public class App{
                 // Respuesta dada por el concursante
                 ans = leer.nextLine();
                 primeraRonda.setRespuesta(ans);
-                resultado = primeraRonda.question1();
+                resultado = primeraRonda.getRespuesta();
                 puntaje = primeraRonda.getPuntaje();
                 System.out.println(resultado); 
                 // Continuación con el juego o salir
@@ -65,7 +65,7 @@ public class App{
                 // Respuesta dada por el concursante
                 ans = leer.nextLine();
                 segundaRonda.setRespuesta(ans);
-                resultado = segundaRonda.question1();
+                resultado = segundaRonda.getRespuesta();
                 puntaje = segundaRonda.getPuntaje();
                 System.out.println(resultado);     
                 // Continuaón cone el juego
@@ -93,7 +93,7 @@ public class App{
                 // Respuesta dada por el concursante
                 ans = leer.nextLine();
                 terceraRonda.setRespuesta(ans);
-                resultado = terceraRonda.question1();
+                resultado = terceraRonda.getRespuesta();
                 puntaje = terceraRonda.getPuntaje();
                 System.out.println(resultado);     
                 // Continuaón del juego
@@ -121,7 +121,7 @@ public class App{
                 // Respuesta dada por el concursante
                 ans = leer.nextLine();
                 cuartaRonda.setRespuesta(ans);
-                resultado = cuartaRonda.question1();
+                resultado = cuartaRonda.getRespuesta();
                 puntaje = cuartaRonda.getPuntaje();
                 System.out.println(resultado);     
                 //Continuacion del juego
@@ -149,7 +149,7 @@ public class App{
                 // Respuesta dada por el concursante
                 ans = leer.nextLine();
                 quintaRonda.setRespuesta(ans);
-                resultado = quintaRonda.question1();
+                resultado = quintaRonda.getRespuesta();
                 puntaje = quintaRonda.getPuntaje();
                 System.out.println(resultado);     
                 // Finalización del juego

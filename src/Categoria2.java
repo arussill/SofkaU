@@ -27,19 +27,19 @@ public class Categoria2 {
     public String getPregunta(){
         switch(numeroPregunta){
             case 1:
-                pregunta = "¿Pregunta 1?";
+                pregunta = "Si X es menor que Y por una diferencia de 6 e Y es el doble de Z,¿cuál es el valor de x cuando Zes igual a 2?";
                 break;    
             case 2:
-                pregunta = "¿Pregunta 2?";
+                pregunta = "Cada estudiante puede elegir entre 4 tipos de sudadera y 3 tipos de pantalones en su uniforme, ¿Cuales son las combinaciones posibles?";
                 break;
             case 3:
-                pregunta ="¿Pregunta 3?";                
+                pregunta ="3(x-4)=18¿Cuál es el valor de x?";                
                 break;        
             case 4:
-                pregunta ="¿Pregunta 4?";                
+                pregunta ="¿Qué resultado da 4x4-4+4x4?";                
                 break;        
             default:
-                pregunta ="¿Pregunta 5?";                
+                pregunta ="¿Cuánto es 2x+6? Si x+3=y";                
                 break;
         }
         return pregunta;
@@ -48,120 +48,116 @@ public class Categoria2 {
     public  String[] getOpciones(){
         switch(numeroPregunta){
             case 1:
-                a = "a.Respuesta 1";
-                b = "b.Respuesta 2";
-                c = "c.Respuesta 3";
-                d = "d.Respuesta 4";
+                a = "a.5";
+                b = "b.8";
+                c = "c.-2";//respuesta correcta
+                d = "d.10";
                 opciones = new String[]{a,b,c,d};
                 break;    
             case 2:
-                a = "a.Respuesta 1";
-                b = "b.Respuesta 2";
-                c = "c.Respuesta 3";
-                d = "d.Respuesta 4";
+                a = "a.10";
+                b = "b.12";//respuesta correcta
+                c = "c.3";
+                d = "d.24";
                 opciones = new String[]{a,b,c,d};
                 break;
             case 3:
-                a = "a.Respuesta 1";
-                b = "b.Respuesta 2";
-                c = "c.Respuesta 3";
-                d = "d.Respuesta 4";
+                a = "a.10";//respuesta correcta
+                b = "b.6";
+                c = "c.14/3";
+                d = "d.22/4";
                 opciones = new String[]{a,b,c,d};           
                 break;        
             case 4:
-                a = "a.Respuesta 1";
-                b = "b.Respuesta 2";
-                c = "c.Respuesta 3";
-                d = "d.Respuesta 4";
+                a = "a.64";
+                b = "b.-4";
+                c = "c.28";//respuesta correcta
+                d = "d.4";
                 opciones = new String[]{a,b,c,d};
                 break;        
             default:
-                a = "a.Respuesta 1";
-                b = "b.Respuesta 2";
-                c = "c.Respuesta 3";
-                d = "d.Respuesta 4";
+                a = "a.2y";//Respuesta correcta
+                b = "b.y";
+                c = "c.4y";
+                d = "d.No se puede resolver";
                 opciones = new String[]{a,b,c,d};
                 break;
         }
         return opciones;
     }
-    // respuesta a la pregunta 1
-    public String question1 ( ){
-        if (respuesta.equalsIgnoreCase("a")){
-            puntaje = puntaje + puntos;
-            resultado = "Respuesta Correcta su puntaje es = " + puntaje;
-            r = "correcto";
-        }else if(respuesta.equalsIgnoreCase("salir")){
-            resultado = "Usted salio del juego con un puntaje =  " + puntaje;
-            r = "salio";
-        }else{
-            puntaje = 0;
-            resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
-            r = "malo";
-        }
-        return resultado;
-    }
-    // respuesta a la pregunta 2
-    public String question2 ( ){
-        if (respuesta.equalsIgnoreCase("a")){
-            puntaje = puntaje + puntos;
-            resultado = "Respuesta Correcta su puntaje es = " + puntaje;
-            r = "correcto";
-        }else if(respuesta.equalsIgnoreCase("salir")){
-            resultado = "Usted salio del juego con un puntaje =  " + puntaje;
-            r = "salio";
-        }else{
-            puntaje = 0;
-            resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
-            r = "malo";
-        }
-        return resultado;
-    }
-    // respuesta a la pregunta 3
-    public String question3 ( ){
-        if (respuesta.equalsIgnoreCase("a")){
-            puntaje = puntaje + puntos;
-            resultado = "Respuesta Correcta su puntaje es = " + puntaje;
-            r = "correcto";
-        }else if(respuesta.equalsIgnoreCase("salir")){
-            resultado = "Usted salio del juego con un puntaje =  " + puntaje;
-            r = "salio";
-        }else{
-            puntaje = 0;
-            resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
-            r = "malo";
-        }
-        return resultado;
-    }
-    // respuesta a la pregunta 4
-    public String question4 ( ){
-        if (respuesta.equalsIgnoreCase("a")){
-            puntaje = puntaje + puntos;
-            resultado = "Respuesta Correcta su puntaje es = " + puntaje;
-            r = "correcto";
-        }else if(respuesta.equalsIgnoreCase("salir")){
-            resultado = "Usted salio del juego con un puntaje =  " + puntaje;
-            r = "salio";
-        }else{
-            puntaje = 0;
-            resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
-            r = "malo";
-        }
-        return resultado;
-    }
-    // respuesta a la pregunta 5
-    public String question5 ( ){
-        if (respuesta.equalsIgnoreCase("a")){
-            puntaje = puntaje + puntos;
-            resultado = "Respuesta Correcta su puntaje es = " + puntaje;
-            r = "correcto";
-        }else if(respuesta.equalsIgnoreCase("salir")){
-            resultado = "Usted salio del juego con un puntaje =  " + puntaje;
-            r = "salio";
-        }else{
-            puntaje = 0;
-            resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
-            r = "malo";
+    // Respuesta
+    public String getRespuesta(){
+        switch (numeroPregunta) {
+            case 1:
+                if (respuesta.equalsIgnoreCase("c")){
+                    puntaje = puntaje + puntos;
+                    resultado = "Respuesta Correcta su puntaje es = " + puntaje;
+                    r = "correcto";
+                }else if(respuesta.equalsIgnoreCase("salir")){
+                    resultado = "Usted salio del juego con un puntaje =  " + puntaje;
+                    r = "salio";
+                }else{
+                    puntaje = 0;
+                    resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
+                    r = "malo";
+                }
+                break;
+            case 2:
+                if (respuesta.equalsIgnoreCase("b")){
+                    puntaje = puntaje + puntos;
+                    resultado = "Respuesta Correcta su puntaje es = " + puntaje;
+                    r = "correcto";
+                }else if(respuesta.equalsIgnoreCase("salir")){
+                    resultado = "Usted salio del juego con un puntaje =  " + puntaje;
+                    r = "salio";
+                }else{
+                    puntaje = 0;
+                    resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
+                    r = "malo";
+                }
+                break;
+            case 3:
+                if (respuesta.equalsIgnoreCase("a")){
+                    puntaje = puntaje + puntos;
+                    resultado = "Respuesta Correcta su puntaje es = " + puntaje;
+                    r = "correcto";
+                }else if(respuesta.equalsIgnoreCase("salir")){
+                    resultado = "Usted salio del juego con un puntaje =  " + puntaje;
+                    r = "salio";
+                }else{
+                    puntaje = 0;
+                    resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
+                    r = "malo";
+                }
+                break;
+            case 4:
+                if (respuesta.equalsIgnoreCase("c")){
+                    puntaje = puntaje + puntos;
+                    resultado = "Respuesta Correcta su puntaje es = " + puntaje;
+                    r = "correcto";
+                }else if(respuesta.equalsIgnoreCase("salir")){
+                    resultado = "Usted salio del juego con un puntaje =  " + puntaje;
+                    r = "salio";
+                }else{
+                    puntaje = 0;
+                    resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
+                    r = "malo";
+                }
+                break;
+            default:
+                if (respuesta.equalsIgnoreCase("a")){
+                    puntaje = puntaje + puntos;
+                    resultado = "Respuesta Correcta su puntaje es = " + puntaje;
+                    r = "correcto";
+                }else if(respuesta.equalsIgnoreCase("salir")){
+                    resultado = "Usted salio del juego con un puntaje =  " + puntaje;
+                    r = "salio";
+                }else{
+                    puntaje = 0;
+                    resultado = "Respuesta Incorrecta, su puntaje es = " + puntaje;
+                    r = "malo";
+                }
+                break;
         }
         return resultado;
     }
