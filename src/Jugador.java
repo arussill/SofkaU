@@ -7,9 +7,7 @@ import java.sql.PreparedStatement;
 // Aqui se realiza el guardado de la puntuación de los jugadores a base de datos
 
 public class Jugador {
-    
-    // int id;
-    // int puntuacion;
+    // Atributos
     int puntaje;
     Connection con = Conexion.conectar();
     
@@ -33,23 +31,5 @@ public class Jugador {
             }
         }
     }
-    
-    // public int consultar() {
-    //     String sql = "SELECT * FROM jugadores;";          
-    //     if (con != null){
-    //         try {
-    //             Statement stmt = con.createStatement();
-    //             ResultSet rs = stmt.executeQuery(sql); 
-    //             if (rs.next()){ 
-    //                 id = rs.getInt("id");
-    //                 puntuacion = rs.getInt("puntaje");
-    //             }
-    //             con.close();
-    //         } catch (Exception e) {
-    //             System.out.println(e.getMessage());
-    //         }
-    //     }
-    //     return puntuacion;
-    // }
     
 }

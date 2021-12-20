@@ -11,7 +11,7 @@ public class App{
         int rondas[] = {1,2,3,4,5};
         String pregunta ;
         String opciones [];
-        // int registro;
+       
         
         // Inicio de juego
         System.out.println("¿Desea jugar? (si/no): ");  
@@ -166,8 +166,7 @@ public class App{
         System.out.println("Gracias por jugar su puntaje final es = " + puntaje);
         // Guardado de los resultados obtenidos de los ganadores del juego en base de datos concurso.db       
         Jugador participante = new Jugador(puntaje);
-        // registro = participante.consultar();
-        // System.out.println(registro);
+        
     }
 }
 
