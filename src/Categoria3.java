@@ -69,17 +69,17 @@ public class Categoria3 {
                 opciones = new String[]{a,b,c,d};           
                 break;        
             case 4:
-                a = "a. 5.8N";
-                b = "b. 6.3N";
-                c = "c. 7.2N";
-                d = "d. 9.8N";//respuesta correcta
+                a = "a.5.8N";
+                b = "b.6.3N";
+                c = "c.7.2N";
+                d = "d.9.8N";//respuesta correcta
                 opciones = new String[]{a,b,c,d};
                 break;        
             default:
                 a = "a.Velocidad media";
                 b = "b.Velocidad angular";//respuesta correcta
                 c = "c.Velocidad lineal";
-                d = "d. Velocidad de trayectoria";
+                d = "d.Velocidad de trayectoria";
                 opciones = new String[]{a,b,c,d};
                 break;
         }

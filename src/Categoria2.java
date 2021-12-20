@@ -27,7 +27,7 @@ public class Categoria2 {
     public String getPregunta(){
         switch(numeroPregunta){
             case 1:
-                pregunta = "Si X es menor que Y por una diferencia de 6 e Y es el doble de Z,¿cuál es el valor de x cuando Zes igual a 2?";
+                pregunta = "Si X es menor que Y por una diferencia de 6 e Y es el doble de Z,¿cuál es el valor de x cuando Z es igual a 2?";
                 break;    
             case 2:
                 pregunta = "Cada estudiante puede elegir entre 4 tipos de sudadera y 3 tipos de pantalones en su uniforme, ¿Cuales son las combinaciones posibles?";

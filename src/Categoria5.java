@@ -51,14 +51,14 @@ public class Categoria5 {
                 a = "a.heaven";
                 b = "b.An ice rink";
                 c = "c.space";
-                d = "None of the above";//respuesta correcta
+                d = "d.None of the above";//respuesta correcta
                 opciones = new String[]{a,b,c,d};
                 break;    
             case 2:
                 a = "a.Energy is not created but it is destroyed through friction.";
                 b = "b.Energy is neither created nor destroyed, it only transforms.";//respuesta correcta
-                c = "c. Energy is created by machine systems that transform it.";
-                d = "d. Energy is neither created nor destroyed, it is only conserved.";
+                c = "c.Energy is created by machine systems that transform it.";
+                d = "d.Energy is neither created nor destroyed, it is only conserved.";
                 opciones = new String[]{a,b,c,d};
                 break;
             case 3:
